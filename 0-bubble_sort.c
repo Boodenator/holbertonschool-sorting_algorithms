@@ -28,17 +28,15 @@ if (array == NULL || size < 2)
 return;
 }
 
-for (i = 0; i < size - 1; i++)
+while (size > 0)
 {
-
-for (j = 0; j < size - 1; j++)
+for (i = 0; i < size - 1; i++)
 {
 if (array[i] > array[i + 1])
 {
 swap(&array[i], &array[i + 1]);
+print_array(array, size);
 }
 }
-
 }
-prrint_array(array, size);
 }
