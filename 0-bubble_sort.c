@@ -21,22 +21,25 @@ int temp = *i;
  */
 void bubble_sort(int *array, size_t size)
 {
-int i, j;
+int i, j, new_j;
 
 if (array == NULL || size < 2)
 {
 return;
 }
 
-while (size > 0)
+j = size;
+while (j > 0)
 {
-for (i = 0; i < size - 1; i++)
+for (i = 0; i < j - 1; i++)
 {
 if (array[i] > array[i + 1])
 {
 swap(&array[i], &array[i + 1]);
+new_j = i + 1;
 print_array(array, size);
 }
 }
+j--;
 }
 }
