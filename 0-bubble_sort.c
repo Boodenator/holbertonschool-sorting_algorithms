@@ -1,8 +1,8 @@
 #include "sort.h"
 /**
  * swap - Swaps the values of two integers
- * @a: Pointer to the first integer
- * @b: Pointer to the second integer
+ * @i: Pointer to the first integer
+ * @j: Pointer to the second integer
  */
 void swap(int *i, int *j)
 {
